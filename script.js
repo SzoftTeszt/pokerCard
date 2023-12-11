@@ -12,9 +12,16 @@ class Card extends HTMLElement{
 
         sign.innerHTML=signs[tipus]
 
-        if (tipus==1 || tipus==2) card.classList.add('red')
+        if (this.dataset.color)
+            card.style.color=`${this.dataset.color}`
+        else if (tipus==1 || tipus==2) card.classList.add('red')
 
         let num = Number(this.getAttribute('data-value'))
+
+        let tisztek= ['J','Q','K']
+        if (num>10) num=tisztek[num-11]
+        if (num==1) num="A"
+        
 
         let number =document.createElement('div')
         number.classList.add('number')

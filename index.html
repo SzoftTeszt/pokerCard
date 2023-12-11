@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Póker</title>
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./mystyle.css">
     <script defer src="./script.js"></script>
 </head>
 <body>
 
-<my-card data-sign="0" data-value="10"></my-card>
+<!-- <my-card data-sign="1" data-value="13" data-color="orange"></my-card> -->
+
+<script>
+    szinek=['green','pink','red','blue']
+    for (let j = 0; j < 4; j++) {
+        for (let i = 1; i < 14; i++) {
+            card=document.createElement('my-card')
+            card.dataset.sign=j
+            card.dataset.value=i
+            card.dataset.color=szinek[j]
+            document.body.appendChild(card)
+        }
+}
+</script>
 
     <!-- ♣♦♥♠ -->
 <!-- <div class="card">
