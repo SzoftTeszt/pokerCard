@@ -3,13 +3,18 @@
     margin:0;
     box-sizing: border-box;
 }
-body{
+/* body{
     background-color: antiquewhite;
+} */
+
+.red{
+    color:red;
 }
+
 
 .card{
     max-width: 500px;
-    min-width: 500px;
+    /* min-width: 500px; */
     border: 1px solid black;
     border-radius: 25px;
     background-color: #f4f4f4;
@@ -22,6 +27,8 @@ body{
     padding:30px;
     font-size: 5rem;
     line-height: .8;
+    align-self:flex-start;
+    text-align: center;
 
 }
 .card .value:last-child{
