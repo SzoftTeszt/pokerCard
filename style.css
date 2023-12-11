@@ -1,0 +1,17 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+
+.card{
+    max-width: 500px;
+    min-width: 500px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #f4f4f4;
+    box-shadow: 10px 10px 10px 5px rgba(0,0,0,.5);
+}
